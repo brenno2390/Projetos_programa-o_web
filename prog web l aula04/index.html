@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Filhote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Adoção de Filhotes</h1>
+        <p>Encontre seu novo melhor amigo!</p>
+    </header>
+
+    <div class="painel">
+
+        <label for="busca">Pesquisar:</label>
+        <input type="text" id="busca" placeholder="Digite o nome ou raça..." onkeyup="pesquisarCachorro()">
+        
+        <br><br>
+        
+
+        <span id="contador">Filhotes aparecendo: 4</span>
+    </div>
+
+
+    <div id="mensagem-sucesso" style="display: none;"></div>
+
+    <div class="grade" id="grade-filhotes">
+        
+        <div class="card" data-nome="bob beagle" data-raca="beagle">
+
+            <img src="cachorro1.jpg" alt="Foto do Bob">
+            <h3>Bob</h3>
+            <p>Raça: beagle</p>
+            <p>Idade: 3 meses</p>
+            <div class="botoes-card">
+      
+                <button class="botao-adotar" onclick="adotarFilhote('Bob')">Adotar</button>
+              
+                <button class="botao-favorito" onclick="favoritar(this)">Favoritar</button>
+            </div>
+        </div>
+
+        <div class="card" data-nome="mel Dálmata" data-raca="Dálmata">
+
+            <img src="cachorro2.jpg" alt="Foto da Mel">
+            <h3>Mel</h3>
+            <p>Raça: Dálmata</p>
+            <p>Idade: 2 meses</p>
+            <div class="botoes-card">
+                <button class="botao-adotar" onclick="adotarFilhote('Mel')">Adotar</button>
+                <button class="botao-favorito" onclick="favoritar(this)">Favoritar</button>
+            </div>
+        </div>
+
+        <div class="card" data-nome="thor Golden Retriever" data-raca="Golden Retriever">
+
+            <img src="cachorro3.jpg" alt="Foto do Thor">
+            <h3>Thor</h3>
+            <p>Raça: Golden Retriever</p>
+            <p>Idade: 4 meses</p>
+            <div class="botoes-card">
+                <button class="botao-adotar" onclick="adotarFilhote('Thor')">Adotar</button>
+                <button class="botao-favorito" onclick="favoritar(this)">Favoritar</button>
+            </div>
+        </div>
+
+        <div class="card" data-nome="luna border collie" data-raca="border collie">
+
+            <img src="cachorro4.jpg" alt="Foto da Luna">
+            <h3>Luna</h3>
+            <p>Raça: Border Collie</p>
+            <p>Idade: 3 meses</p>
+            <div class="botoes-card">
+                <button class="botao-adotar" onclick="adotarFilhote('Luna')">Adotar</button>
+                <button class="botao-favorito" onclick="favoritar(this)">Favoritar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
