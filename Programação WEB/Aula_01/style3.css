@@ -1,0 +1,62 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 20px;
+}
+
+.titulo-principal {
+    text-align: center;
+    color: #334155;
+}
+
+.perfil {
+    background-color: #ffffff;
+    width: 500px;
+    padding: 35px;
+    margin: 30px auto;
+    border: 2px solid #e2e8f0;
+    border-radius: 15px;
+}
+
+.nome-aluno {
+    color: #0f172a;
+    margin-top: 0;
+}
+
+.biografia {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.secao-tecnologias {
+    margin-top: 25px;
+}
+
+.lista-tecnologias {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.tecnologia {
+    color: #1e293b;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.bloco-link {
+    margin-top: 30px;
+}
+
+.link-contato {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.link-contato:hover {
+    color: #dc2626;
+    text-decoration: underline;
+}
